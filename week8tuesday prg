@@ -1,0 +1,23 @@
+movie = {"Movie 1": 10,
+        "Movie 2": 12,
+        "Movie 3": 15} #dictionary is a collection of key-value pairs, it is used to store data in a structured way
+bookings = [] #list is a collection of items, it is used to store data in a structured way
+ticket_number = 0
+def book_seat(name,movie,tickets):
+    global ticket_number
+    ticket_number += 1
+    price = int(movie[movie])
+    total_price = price * tickets
+    booking = {"Ticket Number": ticket_number, "Name": name, "Movie": movie, "Tickets": tickets, "Total Price": total_price, "Status": "Pending"}
+    bookings.append(booking)
+    return booking
+book_seat()
+def pay_ticket(ticket):
+    for booking in bookings:
+        if booking["Ticket Number"] == ticket:
+            booking["Status"] = "Paid"
+            return True
+    return False
+
+pay_ticket()
+

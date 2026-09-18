@@ -1,0 +1,63 @@
+#Part-1:ListPractise(Easy)
+#Ques-1
+numbers=[12, 23, 34, 45, 56]
+print("All elements:", numbers)
+
+#Ques-2
+print("First element:", numbers[0])
+print("Last element:", numbers[-1])
+
+#Ques-3
+numbers.append(60)
+print("After append:", numbers)
+
+#Ques-4
+numbers.insert(2, 25)
+print("After insertation:", numbers)
+
+#Ques-5
+numbers.remove(34)
+print("After removal:", numbers)
+
+#Part-2:TuplePractise
+#Ques-6
+colors=("red", "blue", "green", "black")
+print("All colors:", colors)
+
+#Ques-7
+print("Second element:", colors[1])
+
+#Ques-8
+blue_count=colors.count("blue")
+print("count of blue", blue_count)
+
+#Part-3:DictonaryPractise
+#Ques-9
+student={"name": "Lyle", "age": 21, "city": "Papatoetoe"}
+
+#Ques-10
+print("Name:", student["name"])
+print("Age:", student["age"])
+print("City:", student["city"])
+
+#Ques-11
+student["course"]="TS7501"
+print("After adding course:", student)
+
+#Ques-12
+student["age"]=21
+print("After updating age:", student)
+
+#Ques-13
+print("After removing city:", student)
+
+#Part-5:LogicBuilding
+#Ques-17
+sample_list=[5, 10, 15, 20, 25]
+total_sum=sum(sample_list)
+print("Sum of numbers:", total_sum)
+
+#Ques-18
+largest=max(sample_list)
+print("Largest Number:", largest)
+

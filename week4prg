@@ -1,0 +1,34 @@
+# #Task-1: Indexing Practice
+word=(input("Enter a word: "))
+print("First character: ", word [0])
+print("Last character: ", word [-1])
+print("Third character: ",word [2])
+
+#Task-2: Slicing Practice
+name=(input("Enter your name: "))
+print("First 3 letters: ", name [:3])
+print("Last 2 letters: ", name [-2:])
+
+#Task-3: Case Conversion
+sentence=(input("Enter your sectence: "))
+print(sentence.upper())
+print(sentence.lower())
+
+#Task-4: Replace and Strip
+sentence1=(input("Enter your sectence1: "))
+print(sentence1.strip())
+print(sentence1.replace(" ","_"))
+
+#Task-5: Find and Count
+sentence2=(input("Enter your sectence2: "))
+print(sentence2.find("a"))
+print(sentence2.count("a"))
+
+#Task-6: Split and join
+fruits=input("Enter the fruits list with comma: ")
+print(fruits.split(","))
+print(" ".join(fruits.split(",")))
+
+
+
+

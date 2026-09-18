@@ -1,0 +1,145 @@
+#Part-1:Basic function
+#Task-1
+def welome_massage():
+    print("Welcome to Python Lab")
+welome_massage()
+
+#Task-2
+def say_hello(name):
+    print("Hello", name)
+say_hello("Puspita")
+
+#Task-3
+def add_numbers(first_number, second_number):
+    return first_number+second_number
+result = add_numbers (10, 20)
+
+#Task-4
+def check_even_odd(number):
+    if number%2 == 0:
+        return "Even"
+    else:
+        return"Odd"
+result=check_even_odd(7)
+print(result)
+
+
+#Part-2: While Loop Practice
+#Task-5
+number=1
+while number<=5:
+    print(number)
+    number+=1
+
+#Task-6
+total=0
+number=int(input("Enter a number(0 to stop): "))
+print("Total:", total)
+
+#Task-7
+correct_password="admin123"
+password=input("Enter password: ")
+
+while password!=correct_password:
+    print("Incorrect password. Try again.")
+    password=input("Enter password: ")
+print("Access granted!")
+
+#Task-8
+total_price=0
+item_name=input("Enter item name (type 'done' to finish): ")
+while item_name.lower()!="done":
+    item_price=float(input("Enter item price: "))
+    total_price+=item_price
+    item_name=input("Enter item name (type 'done' to finish): ")
+print("Total price: $", total_price)
+
+#Part-3: For loop practice
+#Task-9
+for number in range(1, 11):
+    print(number)
+
+#Task-10
+numbers=[100, 200, 300]
+total=0
+for number in numbers:
+    total+=number
+print("Total:", total)
+
+#Task-11
+items=["Apple", "Banana", "Orange"]
+for item in items:
+    print(item)
+
+#Task-12
+items=["Apple", "Banana", "Orange"]
+for index, item in enumerate(items):
+    print(index, item)
+
+#Part-4: Function to add numbers using a while loop
+#Task-13
+def add_numbers():
+    total = 0
+    number = int(input("Enter a number (0 to stop): "))
+    while number != 0:
+        total += number
+        number = int(input("Enter a number (0 to stop): "))
+    return total
+result = add_numbers()
+print("Total:", result)
+
+#Task-14
+def calculate_total(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+number_list = [100, 200, 300]
+result = calculate_total(number_list)
+print("Total:", result)
+
+#Task-15
+def display_items(items, prices):
+    for index in range(len(items)):
+        print(items[index], "- $", prices[index])
+items = ["Apple", "Bread", "Milk"]
+prices = [2.50, 3.00, 4.50]
+display_items(items, prices)
+
+#Part-5: Mini Assessment Practice
+def add_items():
+    items = []
+    prices = []
+
+    item_name = input("Enter item name (type 'done' to finish): ")
+
+    while item_name.lower() != "done":
+        item_price = float(input("Enter item price: "))
+
+        items.append(item_name)
+        prices.append(item_price)
+
+        item_name = input("Enter item name (type 'done' to finish): ")
+
+    return items, prices
+
+def calculate_total(prices):
+    total = 0
+
+    for price in prices:
+        total += price
+
+    return total
+
+def display(items, prices, total):
+    print("\n--- Shopping List ---")
+
+    for index in range(len(items)):
+        print(items[index], "- $", prices[index])
+
+    print("---------------------")
+    print("Total: $", total)
+
+items, prices = add_items()
+total = calculate_total(prices)
+display(items, prices, total)
